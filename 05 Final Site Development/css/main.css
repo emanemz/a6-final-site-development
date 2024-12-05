@@ -1,0 +1,439 @@
+@charset "UTF-8";
+
+/*----- Imports -----*/
+@import url(normalize.css);
+
+/*--------------------------------------------------------------
+    TABLE OF CONTENTS:
+----------------------------------------------------------------
+1.0 - Settings: used with preprocessors and contain font, colors definitions, etc.
+2.0 - Tools: globally used mixins and functions. Use for preprocessor only.
+3.0 - Generic: reset and/or normalize styles, box-sizing definition, etc. 
+4.0 - Elements: styling for bare/generic HTML elements 
+        - Typography: Typography, Links, Address
+5.0 - Objects: class-based selectors which define undecorated design patterns, building blocks
+        - Framework
+6.0 - Components: specific designed components
+        - Nav
+        - Hero 
+        - Backgrounds & Spacing
+        - Footer 
+7.0 - Utilities: utilities and helper classes with ability to override anything which goes before in the triangle, eg. hide helper class
+        - Screen Reader
+7.5 - CSS Variable       
+8.0 - Media Queries
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+    3.0 - GENERIC
+-------------------------------------------------------------- */
+/* for some time, universal and html or body selector are all that will appear under here  */ 
+
+
+/* ----- UNIVERSAL ----- */
+
+* {
+    -o-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box; 
+}
+
+*:focus-visible {
+    outline: 3px solid rgb(120, 196, 250);
+    outline-offset: 2px;
+}
+
+html {
+    font-size: 1.25rem; /* 20px */
+    scroll-behavior: smooth;
+}
+
+body {
+    color: var(--color-black);
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    background: #F0ECE9;
+}
+
+/*--------------------------------------------------------------
+    4.0 - ELEMENTS
+    - single (not contextual) element selectors only. No classes. No IDs. No contextual selectors. 
+-------------------------------------------------------------- */
+/* shared styles across elements are grouped at the top, not under an individual elements. Reduces repeated styles */ 
+/*----- IMAGES-----*/ 
+img {
+    width: 50%;
+    height: auto;
+    max-width: 100%;
+    aspect-ratio: 2/1;
+    object-fit: cover;
+    object-position: center top;
+}
+
+
+/* ----- TYPOGRAPHY ----- */
+
+
+
+/* ----- LINKS ----- */
+
+
+a:hover,
+a:focus,
+a:active {
+  
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+
+
+/* ----- ADDRESS ----- */
+
+
+
+
+/*--------------------------------------------------------------
+    5.0 - OBJECTS
+-------------------------------------------------------------- */
+/* for some time, only .wrapper and .row are likely to appear under this category */ 
+
+/* ----- FRAMEWORK ----- */
+.wrapper {
+    margin: 0 auto;
+    max-width: 1280px;
+    padding: 0 var(--padding);
+}
+
+.grid {
+    display: grid;
+}
+
+.flex {
+    display: flex;
+}
+
+
+
+
+
+/*--------------------------------------------------------------
+    6.0 - COMPONENTS
+-------------------------------------------------------------- */
+/* shared styles across components are grouped at the top, not under an individual component. Reduces repeated styles */ 
+
+
+
+/* hero / footer / nav -- are considered components because they'd repeat on across pages on a multi page site. be careful to not get them in the habit of styling based on the 'content' that appears on the page but rather what components make those up */ 
+/* ----- General ----- */
+
+
+a:hover,
+.btn:hover {
+    opacity: .7;
+}
+
+.btn {
+    display: inline-block;
+    border: 0.15rem solid #0b3848;
+    border-radius: 2.5rem;
+    padding: .5rem 1.25rem;
+}
+
+.btn:a:hover,
+.btn:a:focus,
+.btn:a:active{
+
+}
+
+
+/* ----- NAV ----- */
+nav img:nth-child(2){
+    width: 8.65rem;
+    height: 8.65rem;
+}
+
+nav .rd-border {
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+}
+
+nav ul{
+    gap: 1.75rem;
+}
+
+nav img:nth-child(1){
+    width: 1rem;
+    height: 1rem;
+}
+
+nav .wrapper .red div.flex:nth-child(2){
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+}
+
+nav .wrapper ul.white {
+    padding: 2.5rem 0;
+    justify-content: center;
+    margin: 0;
+}
+
+/* ----- HERO ----- */
+main > section {
+    margin-bottom: var(--spacing);
+    }
+section.has-background-color {
+    padding: var(--spacing);
+    }
+
+nav .wrapper div.bg-mammothimg h1{
+    margin: 0;
+    padding: 0;
+    justify-self: center;
+    align-self: center;
+    width: 674px;
+    text-align: center;
+}
+/*-- Calender--*/
+main section:nth-child(1) div.wrapper .rd-border {
+    justify-content: center;
+    padding: 50px 0 0;
+}
+
+main section div.wrapper .bg-lgreen {
+    height: 766px;
+    width: 360px;
+    padding: 10px 20px 20px;
+}
+
+main section:nth-child(1) div.wrapper .flex:nth-child(2){
+    justify-content: space-between;
+    padding: 50px 0;
+}
+
+
+
+/* ----- BACKGROUNDS AND SPACING ----- */
+.bg-mammothimg {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/deadmamoth.jpg) top / cover;
+    height: 500px;
+}
+
+.bg-lgreen {
+    background: #BEC2B3;
+}
+
+.bg-red {
+    background: #851111;
+}
+
+.bg-yellow {
+    background: #B68A2B;
+}
+
+.bg-wht {
+    background: #fff;
+}
+
+.rd-border {
+    border-bottom: #851111 .125rem solid;
+}
+
+.boxwithnoimg {
+    width: 280px;
+    height: 244px;
+    background: #fff;
+}
+
+
+/* ----- FOOTER ----- */
+
+
+/*--------------------------------------------------------------
+    7.0 - UTILITY
+-------------------------------------------------------------- */
+/* only classes that could be used on 'any' element should go here  */ 
+
+.xxl-textsize {
+    font-size: 2.75rem;
+}
+
+.xl-textsize {
+    font-size: 2.5rem;
+}
+
+.l-textsize {
+    font-size: 1.8rem ;
+}
+
+.m-textsize {
+    font-size: 1rem;
+}
+
+.s-textsize {
+    font-size: 0.8rem;
+}
+
+.xxl-textweight {
+    font-weight: 800;
+}
+
+.xl-textweight {
+    font-weight: 700;
+}
+
+.l-textweight {
+    font-weight: 600;
+}
+
+.m-textweight {
+    font-weight: 500;
+}
+
+
+/*-- font colors (rename)--*/
+.red {
+    color: #851111;
+}
+
+.yellow {
+    color: #B68A2B;
+}
+
+.lgreen {
+    color: #BEC2B3;
+}
+
+.dgreen {
+    color: #253F0F;
+}
+
+.brown {
+    color: #412C0A;
+}
+
+.white {
+    color: #fff;
+}
+
+
+/*--"icons'--*/
+
+.tempologo {
+    height: 1.5rem;
+    width: 1.5rem;
+    background: #000;
+    border-radius: 2rem;
+}
+
+/*-- Buttons--*/
+.green-btn {
+background: #253F0F;
+width: 206px;
+height: 65px;
+border-radius: 35px;
+display: inline-block;
+text-align: center;
+align-content: center;
+
+
+}
+
+.yellow-btn {
+background: #B68A2B;
+width: 206px;
+height: 65px;
+border-radius: 35px;
+display: inline-block;
+text-align: center;
+align-content: center;
+}
+
+
+
+
+
+
+
+.sr-only {
+    position:absolute;
+    left:-10000px;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+}
+
+.skip-to-main {
+    align-items: center;
+    background-color: black;
+    color: #fff;
+    display: flex;
+    font-size: 1rem;
+    height: 3rem;
+    justify-content: center;
+    margin-top: -3rem;
+    text-decoration: none;
+    transition: all .3s ease-out;
+    width: 100%;
+}
+
+.skip-to-main:focus {
+    margin-top: 0;
+}
+
+.skip-to-main:hover {
+    background-color: grey;
+}
+
+/*------------------------------------------------------------
+     7.5 - CSS Variable 
+--------------------------------------------------------------*/
+
+:root {
+    --color-black: #000;
+    --color-white: #fff:
+    --padding: 2rem;
+    --spacing: 5rem;
+}
+
+/*--------------------------------------------------------------
+    8.0 Media Queries
+-------------------------------------------------------------- */
+/* Laptop */
+@media only screen and (max-width: 1100px) {
+    :root {
+        --padding: 2rem;
+        --spacing: 3rem;
+    } 
+}
+
+/* Tablet */
+@media only screen and (max-width: 768px) {
+    :root {
+        --padding: 1.5rem;
+        --spacing: 3rem;
+    } 
+}
+
+/* Mobile */
+@media only screen and (max-width: 480px) {
+:root {
+    --padding: 1rem;
+    --spacing: 3rem;
+}
+}
