@@ -7,6 +7,13 @@
         <link rel="stylesheet" type="text/css" href="css/main.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
         <script src="js/site.js"></script> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap" rel="stylesheet">
+        <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+        <link rel="manifest" href="img/favicon/site.webmanifest">
     </head>
 
     <body>
@@ -15,15 +22,302 @@
         <a href="#main" class="skip-to-main">Skip to Main</a>
         
         <!--Header-->
-        <button class="menu-trigger" aria-label="mobile menu" area-expanded="false">Menu</button>
+        
+        <header>
+            <button class="menu-trigger" aria-label="mobile menu" area-expanded="false">Menu</button>
+            <nav>
+                <div class="wrapper">
+                    <div class="red">
+                        <div class="rd-border flex">
+                            <ul class="flex">
+                                <li class="m-weight s-textsize"><a href="#">VISIT</a></li>
+                                <li class="m-weight s-textsize"><a href="#">CALENDAR</a></li>
+                            </ul>
+                            <a href="homepage.html"><img src="img/logo.png" alt="Morril Hall Mamoth logo"></a>
+                          
+                            <ul class="flex">
+                                <li>
+                                    <a href="#">
+                                        <div class="tempologo">
+                                            <p class="s-textsize white xxl-textweight">S</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="tempologo">
+                                            <p class="s-textsize white xxl-textweight">S
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li><a href="#"><div class="tempologo"><p class="s-textsize white xxl-textweight">D</p></div></a></li>
+                            </ul>
+                        </div>
+                        
+                        <!--Unl logo-->
+                        <div class="flex">
+                            <img src="img/NE.png" alt="Unl Logo">
+                            <p class="m-weight s-textsize">UNIVERSITY OF NEBRASKA</p>
+                        </div>
+                    </div>
 
+                    <ul class="bg-red flex white">
+                        <li class="xl-textweight s-textsize"><a href="#">EHXIBITS</a></li>
+                        <li class="xl-textweight s-textsize"><a href="#">EDUCATION</a></li>
+                        <li class="xl-textweight s-textsize"><a href="#">RESEARCH</a></li>
+                        <li class="xl-textweight s-textsize"><a href="#">BOOK TODAY</a></li>
+                        <li class="xl-textweight s-textsize"><a href="aboutus.html">ABOUT US</a></li>
+                        <li class="xl-textweight s-textsize"><a href="getinvolved.html">GET INVOLVED</a></li>
+                    </ul>
+
+                    <div class="bg-mammothimg grid">
+                            <h1 class="xxl-textweight xxl-textsize white">Becoming a Member</h1>
+                            <h2 class="l-textsize l-textweight">UNSM membership opens an multitude of opportunities to explore science and natural history</h2>
+                    </div>
+                </div>
+            </nav>
+        </header>
         <!--Main--> 
         <main id="main">
-            <!--Hero-->
+           <section>
+               <div class="wrapper">
+                   <div class="bg-lgreen">
+                       <h2>Benefits</h2>
+                       <h3>These listed benefits are included for all membership levels.</h3>
+                   </div>
+               </div>
+           </section>
+
+           <section>
+                <div class="wrapper">
+                    <div class="flex bg-wht">
+                        <h2>Explore</h2>
+                        <p>Unlimited access to all UNSM locations: Morrill Hall (Lincoln), Ashfall Fossil Beds (Royal), and Trailside Museum (Crawford)</p>
+                        <p>Access to hundreds of science centers across the U.S. through the ASTC Passport Program</p>
+                    </div>
+                    <div class="flex">
+                        <h2>Save</h2>
+                        <p>10% off Morrill Hall birthday parties</p>
+                        <p>10% off Discovery Gift Shop purchases</p>
+                        <p>Discounted rates for UNSM Summer Camps</p>
+                        <p>Discounted admission rates on Mueller Planetarium Shows</p>
+                        <p>Discounted admission rates on Mueller Planetarium Shows</p>
+                    </div>
+                    <div class="bg-wht flex">
+                        <h2>Experience</h2>
+                        <p>Free admission and gifts at events like Dinosaurs & Disasters, Fossil Day, and Archie's Party at Morrill Hall</p>
+                        <p>Free admission to the Rockin' Rhino Bash at Ashfall Fossil Beds</p>
+                        <p>Access to monthly science activities with educators & researchers, like Sunday with a Scientist and Saturday Science Lab</p>
+                        <p>New: Annual Member Appreciation Night at Morrill Hall</p>
+                        <p>Regular updates on museum events through the Museum Happenings e-newsletter</p>
+                        <p>Behind-the-scenes insights on museum operations and research via the semi-annual Mammoth newsletter</p>
+                    </div>
+                </div>
+           </section>
+
+           <section>
+            <div class="wrapper">
+                <div class="flex">
+                    <h2>How Your Membership Gives Back</h2>
+                    <p>Joining our membership goes beyond personal benefits; it supports educational programs, internships, and community outreach at the museum. Your membership funds engaging exhibits, aids in conserving millions of global specimens, and contributes to our Community Access Program, which partners with local organizations to provide free museum passes to underserved groups.</p>
+                    <img src="img/kids.jpg" alt="Children learning">
+                </div>
+            </div>
+           </section>
+
+           <section>
+            <h2>Become a Member</h2>
+            <form action="get">
+                <fieldset>
+                    <legend>Name</legend>
+                    <label for="firstname">First Name</label>
+                    <input type="text" name="irstname" id="firstname" placeholder="Enter First Name" required>
+                    <label for="lastname">Last Name</label>
+                    <input type="text" name="lasttname" id="lastname" placeholder="Enter Last Name" required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Email</legend>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" autocomplete="on" placeholder="sample@mail.com" required> 
+                </fieldset>
+
+                <fieldset>
+                    <legend>Memembership Type</legend>
+                    <label><input type="radio" name="radio" value="INDIVIDUAL - $55"/>
+                    INDIVIDUAL - $55</label>
+
+                    <label><input type="radio" name="radio" value="FAMILY - $69"/>
+                    FAMILY - $69</label>
+
+                    <label><input type="radio" name="radio" value="STARGAZER - $125"/>
+                    STARGAZER - $125/label>
+
+                    <label><input type="radio" name="radio" value="AGATE - $250"/>
+                    AGATE - $250</label>
+
+                    <label><input type="radio" name="radio" value="IMONARCH - $500"/>
+                    MONARCH - $500</label>
+                    <label><input type="radio" name="radio" value="MAMMOTH - $1,000"/>
+                    MAMMOTH - $1,000</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Submission</legend>
+                    <input type="submit" value="Submit">
+                </fieldset>
+            </form>
+           </section>
+        
+
+           <section>
+            <div class="wrapper">
+                <div class="bg-red">
+                    <h2 >Membership Levels & Benefits</h2>
+                </div>
+                <div class="brown">
+                    <div class="flex bg-wht">
+                        <p>INDIVIDUAL - $55</p>
+                        <p>Provides base membership benefits for one individual.</p>
+                    </div>
+                    <div class="flex bg-wht">
+                        <p>FAMILY- $69</p>
+                        <div>
+                            <p>Family comes in all shapes and sizes. This membership provides base benefits for two adults and two children under 18v* regardless of household status or relationship. (Additional children can be added with our Child Add On benefit.)</p>
+                            <p>At least one of the listed adults on the membership must be present at time of use. *Adult dependents can qualify as a child on memberships.</p>
+                        </div>
+                    </div>
+                    <div class="flex bg-wht">
+                        <p>STARGAZER - $125</p>
+                        <div>
+                            <p>The perfect membership for those who love exploring the galaxy. This membership provides UNLIMITED Planetarium Access** in addition to base benefits for two adults and two children under 18* regardless of relationship or household status. (Additional children can be added with our Child Add On benefit).</p>
+                            <p>At least one of the listed adults on the membership must be present at time of use.</p>
+                            <p>*Adult dependents can qualify as a child on memberships.</p>
+                            <p>**Planetarium access is for public shows only, and is subject to the planetariums normal ticket/seating availability on any given show.</p>
+                        </div>
+                    </div>
+                    <div class="flex bg-wht">
+                        <p>AGATE - $250</p>
+                        <div>
+                            <p>Enjoy all the benefits of Stargazer level and a complimentary Smithsonian Affiliate Membership, while also providing rock star support for the museum's research, exhibits, and education programs.</p>
+                            <p>$125 of this membership is tax deductible.</p>
+                        </div>
+                    </div>
+                    <div class="flex bg-wht">
+                        <p>MONARCH - $500</p>
+                        <p>Enjoy all the benefits of Stargazer level and a complimentary Smithsonian Affiliate Membership, while also helping our research, exhibits, and education programs keep fluttering along.</p>
+                        <p>$375 of the membership is tax deductible.</p>
+                    </div>
+                    <div class="flex bg-wht">
+                        <p>MAMMOTH - $1,000</p>
+                        <div>
+                            <p>Enjoy all the benefits of Stargazer level and a copmlimentary Smithsonian Affiliate Membership, plus make a mammoth sized impact on supporting the museum’s research, exhibits, and education programs.</p>
+                            <p>$875 of this membership is tax deductible.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           </section>
+
+           <section class="bg-lgreen brown">
+            <div class="wrapper">
+                <h6 class="xl-textweight m-textsize">UNL Faculty/Staff Discount</h6>
+                <p class="m-weight s-textsize">UNL faculty and staff qualify for 10% off desired hlevel of membership. Visit any of our museum locations or call <a href="tel:+14024722637">+1 402-472-2637</a> for your discount code.</p>
+            </div>
+
+            <section>
+                <div>
+                    <h2>Community Access Program</h2>
+                    <p>Each season members have the ability to join the Museum in supporting a local organization. UNSM will donate 2 free Morrill Hall passes for every membership purchased or renewed during the designated membership drive period. Additional passes can be purchased for donation at a discounted rate of 2 passes for $10.</p>
+                    <p>Members are welcome to nominate a community organization to receive the passes. Other nominations are provided by UNSM staff, the Friends of the State Museum, or organizations can nominate themselves. Nominated organizations are evaluated based on their mission, audience served, and potential to provide access to community members who otherwise may not be able to visit museums.</p>
+                    <p>Questions on the Community Access Program or organization nominations can be sent to unsmmembership@unl.edu.</p>
+
+                </div>
+            </section>
+
+
 
         </main>
 
+        <footer class="m-weight s-textsize white bg-red">
+            <div class="wrapper">
+                <div class="grid">
+                    <div class="flex">
+                        <div class="flex">
+                            <div class="grid">
+                                <p><a href="#">About Us</a></p>
+                                <p><a href="#">News</a></p>
+                                <p><a href="#">Announcements</a></p>
+                                <p><a href="#">Our Mission</a></p>
+                                <p><a href="#">Get Involved</a></p>
+                                <div class="tempologo"></div>
+                            </div>
+                            <div class="grid">
+                                <div class="flex">
+                                    <div class="tempologo"></div>
+                                    <p><a href="#">Parking</a></p>
+                                </div>
+                                <div class="flex">
+                                    <div class="tempologo"></div>
+                                    <p><a href="#">Accessibility</a></p>
+                                </div>
+                                <div class="flex">
+                                    <div class="tempologo"></div>
+                                    <p><a href="#">Morrill Hall</a></p>
     
+                                    <a href="https://maps.app.goo.gl/nytNRitJgXosoUk79">645 North 14th Street Lincoln, NE 68588-0338</a>
+                                  
+                                </div>
+                                <div class="flex">
+                                    <div class="tempologo"></div>
+                                    <p><a href="#">Contact</a></p>
+                                    <address>
+                                    <a href="tel:+14024722637">+1 402-472-2637</a>
+                                    </address>
+    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <img src="img/M4A.png" alt="Museum For All Logo">
+                            <img src="img/BSM.png" alt="Blue Star Museum">
+                            <img src="img/SofA.png" alt="Smithsonian Affiliate">
+                            <img src="img/NE2.png" alt="University of Lincoln Nebraska">
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <div>
+                            <p>UNL does not discriminate based upon any protected status. Please see <a href="go.unl.edu/nondiscrimination">go.unl.edu/nondiscrimination</a>.</p>
+                        </div>
+                        <div class="flex">
+                            <address class="brown rec bg-wht">
+                                <a href="mailto:Email@sample.com">jEmail@sample.com</a>
+                            </address>
+                            <div class="bg-yellow sqa">
+                                <p><a href="#">Send</a></p>
+                            </div>
+                        </div>
+                        <div>
+                            <p>Sign up for e-news</p>
+                            <div class="flex">
+                                <a href="https://www.instagram.com/morrillhallunl/">
+                                <div class="tempologo"><p class="s-textsize xxl-textweight white">I</p></div></a>
+    
+                                <a href="https://www.facebook.com/UNSMMorrillHall/">
+                                    <div class="tempologo"><p class="s-textsize xxl-textweight white">F</p></div></a>
+    
+                                <a href="https://x.com/morrillhallunl">
+                                    <div class="tempologo"><p class="s-textsize xxl-textweight white">X</p></div></a>
+    
+                                <a href="https://www.youtube.com/@UNLArchie">
+                                    <div class="tempologo"><p class="s-textsize xxl-textweight white">Y</p></div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </body>
 
     

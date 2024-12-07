@@ -10,14 +10,19 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap" rel="stylesheet">
+        <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+        <link rel="manifest" href="img/favicon/site.webmanifest">
     </head>
 
     <body>
         <!--Skip to Main-->
         <a href="#main" class="skip-to-main">Skip to Main</a>
         <!--Header-->
-        <button class="menu-trigger" aria-label="mobile menu" area-expanded="false">Menu</button>
+        
         <header>
+            <button class="menu-trigger" aria-label="mobile menu" area-expanded="false">Menu</button>
             <nav>
                 <div class="wrapper">
                     <div class="red">
@@ -27,11 +32,24 @@
                                 <li class="m-weight s-textsize"><a href="#">CALENDAR</a></li>
                             </ul>
                             <img src="img/logo.png" alt="Morril Hall Mamoth logo">
-                            <!--Gift shop, search, and donate icons-->
+                          
                             <ul class="flex">
-                                <li><a href=""><div class="tempologo"></div></a></li>
-                                <li><a href=""><div class="tempologo"></div></a></li>
-                                <li><a href=""><div class="tempologo"></div></a></li>
+                                <li>
+                                    <a href="#">
+                                        <div class="tempologo">
+                                            <p class="s-textsize white xxl-textweight">S</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="tempologo">
+                                            <p class="s-textsize white xxl-textweight">S
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li><a href="#"><div class="tempologo"><p class="s-textsize white xxl-textweight">D</p></div></a></li>
                             </ul>
                         </div>
                         
@@ -70,13 +88,13 @@
                         <div class="bg-lgreen">
                             <div>
                                 <h3 class="dgreen l-textsize xxl-textweight">Nov 9th Sat</h3>
-                                <h5 class="l-textweight m-textsize red">Investigate: Test Your Hypothesis</h5>
-                                <p class="brown xl-textweight m-textsize">10:00am to 1:00pm</p>
+                                <h4 class="xxl-textsize m-textsize red">Investigate: Test Your Hypothesis</h4>
+                                <p class="brown xl-textweight m-textsize"><h5>10:00am to 1:00pm</h5></p>
                             </div>
-                            <div>
+                            <div class="flex">
                                 <div class="boxwithnoimg"></div>
-                                <p class="brown m-weight s-textsize">At this Investigate program, you\'ll get to dive into different branches of science to come up with your own hypotheses and then carry out fun experiments to see what happens! Ages 10 and up.</p>
-                                <div class="xl-textweight s-textsize white green-btn">
+                                <p class="brown m-weight s-textsize linespacing width">At this Investigate program, you'll get to dive into different branches of science to come up with your own hypotheses and then carry out fun experiments to see what happens! Ages 10 and up.</p>
+                                <div class="xl-textweight s-textsize white green-btn btn btn">
                                     <p>LEARN MORE</p>
                                 </div>
                             </div>
@@ -84,13 +102,13 @@
                         <div class="bg-lgreen">
                             <div>
                                 <h3  class="dgreen l-textsize xxl-textweight">Nov 21st Thu</h3>
-                                <h5 class="l-textweight m-textsize red">Hubbard Lecture</h5>
-                                <p class="brown xl-textweight m-textsize">5:00pm</p>
+                                <h4 class="xxl-textweight m-textsize red">Hubbard Lecture with Dr. Curly</h4>
+                                <p class="brown xl-textweight m-textsize"><h5>5:00pm</h5></p>
                             </div>
-                            <div>
+                            <div class="flex">
                                 <div class="boxwithnoimg"></div>
-                                <p class="brown m-weight s-textsize">Hosting Re(Connections) Through Time, featuring representatives from the Hopi and Zuni Tribes, a documentary screening and a panel discussion, sharing their experiences.</p>
-                                <div class="green-btn white xl-textweight s-textsize">
+                                <p class="brown m-weight s-textsize linespacing width">Hosting Re(Connections) Through Time, featuring representatives from the Hopi and Zuni Tribes, a documentary screening and a panel discussion, sharing their experiences, narrated by Dr. Curly.</p>
+                                <div class="green-btn btn white xl-textweight s-textsize">
                                     <p>LEARN MORE</p>
                                 </div>
                             </div>
@@ -98,13 +116,13 @@
                         <div class="bg-lgreen">
                             <div>
                                 <h3  class="dgreen l-textsize xxl-textweight">Dec 4th Wed</h3>
-                                <h5 class="l-textweight red">Winter Wonderland Scavenger Hunt</h5>
-                                <p class="xl-textweight m-textsize brown">3:00 pm</p>
+                                <h4 class="xxl-textweight red m-textsize">Winter Wonderland Scavenger Hunt</h4>
+                                <p class="xl-textweight m-textsize brown"><h5>3:00 pm</h5></p>
                             </div>
-                            <div>
+                            <div class="flex">
                                 <div class="boxwithnoimg"></div>
-                                <p class="m-weight s-textsize brown">A scavenger hunt where visitors will follow clues, solve puzzle and artifacts throughout the hall. The event is family-friendly interactive way to learn about nature and history.</p>
-                                <div class="green-btn xl-textweight s-textsize white">
+                                <p class="m-weight s-textsize brown linespacing width">A scavenger hunt where visitors will follow clues, solve puzzle and artifacts throughout the hall. The event is family-friendly interactive way to learn about nature and history.</p>
+                                <div class="green-btn btn xl-textweight s-textsize white">
                                     <p>LEARN MORE</p>
                                 </div>
                             </div>
@@ -116,38 +134,40 @@
 <!--Admission-->
          <section>   
             <div class="wrapper">
-                <div class="bg-yellow">
+                <div class="bg-yellow grid">
                     <h2 class="white xxl-textweight xl-textsize"> Museum Admission</h2>
                 </div>
-                    <div class="xl-textweight m-textsize brown">
-                        <div class="flex">
-                            <p>Adults (ages 12+)*</p>
-                            <p>$12.50</p>
-                        </div>
-                        <div class="flex">
-                            <p>Children (ages 3-11)</p>
-                            <p>$6.75</p>
-                        </div>
-                        <div class="flex">
-                            <p>Young Children (under 3)</p>
-                            <p>FREE</p>
-                        </div>
-                        <div class="flex">
-                            <p>Museums for All (with SNAP, EBT, or WIC Card)</p>
-                            <p>$1.00</p>
-                        </div>
-                        <div class="flex">
-                            <p>Museum Members, UNL NCard Holders, ASTC Members</p>
-                            <p>FREE</p>
-                        </div>
+                <div class="xl-textweight m-textsize brown flex">
+                    <div class="flex bg-wht">
+                        <p>Adults (ages 12+)*</p>
+                        <p>$12.50</p>
                     </div>
-                    <p class="m-weight s-textsize brown">*A $1 discount is available for Seniors (65+), or Active/Veteran Military (with ID) on regular admission</p>
-                    <div class="green-btn xl-textweight s-textsize white"><p>PURCHASE</p></div>
-                    <div>
-                        <h5 class="l-textweight m-textsize brown">Group Visit Options</h5>
-                        <p class="m-weight brown s-textsize">The museum offers discounts for large group visits. Groups must book at least 1 week in advance, and payment must be submitted in one installment via one payment method.</p>
-                        <div class="yellow-btn xl-textweight s-textsize white"><p>INQUIRE HERE</p></div>
+                    <div class="flex bg-wht">
+                        <p>Children (ages 3-11)</p>
+                        <p>$6.75</p>
                     </div>
+                    <div class="flex bg-wht">
+                        <p>Young Children (under 3)</p>
+                        <p>FREE</p>
+                    </div>
+                    <div class="flex bg-wht">
+                        <p>Museums for All (with SNAP, EBT, or WIC Card)</p>
+                        <p>$1.00</p>
+                    </div>
+                    <div class="flex bg-wht">
+                        <p>Museum Members, UNL NCard Holders, ASTC Members</p>
+                        <p>FREE</p>
+                    </div>
+                </div>
+                <div>
+                    <p class="m-weight m-textsize brown">*A $1 discount is available for Seniors (65+), or Active/Veteran Military (with ID) on regular admission</p>
+                    <div class="green-btn btn xl-textweight s-textsize white"><p>PURCHASE</p></div>
+                </div>
+                <div class="bg-lgreen">
+                    <h5 class="l-textweight m-textsize brown">Group Visit Options</h5>
+                    <p class="m-weight brown s-textsize">The museum offers discounts for large group visits. Groups must book at least 1 week in advance, and payment must be submitted in one installment via one payment method.</p>
+                    <div class="yellow-btn btn xl-textweight s-textsize white"><p>INQUIRE HERE</p></div>
+                </div>
             </div>
             </section>
 <!--Hours-->
@@ -156,20 +176,20 @@
                     <div class="rd-border">
                         <h2 class="xxl-textweight xl-textsize dgreen">Hours</h2>
                     </div>
-                        <div class="xl-textweight m-textsize brown">
-                            <div class="flex">
-                                <p>Mondays</p>
-                                <p>Closed</p>
-                            </div>
-                            <div class="flex">
-                                <p>Tuesday - Saturday</p>
-                                <p>9:00am - 5:00pm</p>
-                            </div>
-                            <div class="flex">
-                                <p>Sunday</p>
-                                <p>12:00pm - 5:00pm</p>
-                            </div>
+                    <div class="xl-textweight m-textsize brown">
+                        <div class="flex bg-wht">
+                            <p>Mondays</p>
+                            <p>Closed</p>
                         </div>
+                        <div class="flex bg-wht">
+                            <p>Tuesday - Saturday</p>
+                            <p>9:00am - 5:00pm</p>
+                        </div>
+                        <div class="flex bg-wht">
+                            <p>Sunday</p>
+                            <p>12:00pm - 5:00pm</p>
+                        </div>
+                    </div>
                     <p class="m-weight s-textsize brown">Morrill Hall is closed to visitors on select holidays (January 1, July 4, Thanksgiving Day, December 24 & 25).</p>
                     </div>
                 </section>
@@ -197,46 +217,55 @@
             <section>
                 <div class="wrapper">
                     <h2 class="yellow xl-textsize xl-textweight"> Join our Familiy Today!</h2>
-                    <div class="green-btn xl-textweight s-textsize white"><p>Apply Now</p></div>
+                    <div class="green-btn btn xl-textweight s-textsize white"><p><a href="becomeamember.html">Apply Now</a></p></div>
                 </div>
             </section>
 <!--discount-->
             <section class="bg-lgreen brown">
                 <div class="wrapper">
                     <h6 class="xl-textweight m-textsize">UNL Faculty/Staff Discount</h6>
-                    <p class="m-weight s-textsize">UNL faculty and staff qualify for 10% off desired hlevel of membership. Visit any of our museum locations or call 402-472-2637 for your discount code.</p>
+                    <p class="m-weight s-textsize">UNL faculty and staff qualify for 10% off desired hlevel of membership. Visit any of our museum locations or call <a href="tel:+14024722637">+1 402-472-2637</a> for your discount code.</p>
                 </div>
             </section>        
         </main>
-    <footer class="m-weight s-textsize white">
+    <footer class="m-weight s-textsize white bg-red">
         <div class="wrapper">
-            <div class="flex">
-                <div>
-                    <p><a href="#">About Us</a></p>
-                    <p><a href="#">News</a></p>
-                    <p><a href="#">Announcements</a></p>
-                    <p><a href="#">Our Mission</a></p>
-                    <p><a href="#">Get Involved</a></p>
-                    <div class="tempologo2"></div>
-                </div>
-                <div>
+            <div class="grid">
+                <div class="flex">
                     <div class="flex">
-                        <div class="tempologo2"></div>
-                        <p><a href="#">Parking</a></p>
-                    </div>
-                    <div class="flex">
-                        <div class="tempologo2"></div>
-                        <p><a href="#">Accessibility</a></p>
-                    </div>
-                    <div class="flex">
-                        <div class="tempologo2"></div>
-                        <p><a href="#">Morrill Hall</a></p>
-                        <p>645 North 14th Street Lincoln, NE 68588-0338</p>
-                    </div>
-                    <div class="flex">
-                        <div class="tempologo2"></div>
-                        <p><a href="#">Contact</a></p>
-                        <p>402-472-2637</p>
+                        <div class="grid">
+                            <p><a href="#">About Us</a></p>
+                            <p><a href="#">News</a></p>
+                            <p><a href="#">Announcements</a></p>
+                            <p><a href="#">Our Mission</a></p>
+                            <p><a href="#">Get Involved</a></p>
+                            <div class="tempologo"></div>
+                        </div>
+                        <div class="grid">
+                            <div class="flex">
+                                <div class="tempologo"></div>
+                                <p><a href="#">Parking</a></p>
+                            </div>
+                            <div class="flex">
+                                <div class="tempologo"></div>
+                                <p><a href="#">Accessibility</a></p>
+                            </div>
+                            <div class="flex">
+                                <div class="tempologo"></div>
+                                <p><a href="#">Morrill Hall</a></p>
+
+                                <a href="https://maps.app.goo.gl/nytNRitJgXosoUk79">645 North 14th Street Lincoln, NE 68588-0338</a>
+                              
+                            </div>
+                            <div class="flex">
+                                <div class="tempologo"></div>
+                                <p><a href="#">Contact</a></p>
+                                <address>
+                                <a href="tel:+14024722637">+1 402-472-2637</a>
+                                </address>
+
+                            </div>
+                        </div>
                     </div>
                     <div class="flex">
                         <img src="img/M4A.png" alt="Museum For All Logo">
@@ -244,29 +273,37 @@
                         <img src="img/SofA.png" alt="Smithsonian Affiliate">
                         <img src="img/NE2.png" alt="University of Lincoln Nebraska">
                     </div>
-            </div>
-
+                </div>
                 <div class="flex">
                     <div>
-                        <p>UNL does not discriminate based upon any protected status. Please see go.unl.edu/nondiscrimination.</p>
+                        <p>UNL does not discriminate based upon any protected status. Please see <a href="go.unl.edu/nondiscrimination">go.unl.edu/nondiscrimination</a>.</p>
                     </div>
-                    <div class="flex bg-wht">
-                        <p>Email@sample.com</p>
-                        <div class="bg-yellow">
-                            <p>Send</p>
+                    <div class="flex">
+                        <address class="brown rec bg-wht">
+                            <a href="mailto:Email@sample.com">jEmail@sample.com</a>
+                        </address>
+                        <div class="bg-yellow sqa">
+                            <p><a href="#">Send</a></p>
                         </div>
                     </div>
                     <div>
                         <p>Sign up for e-news</p>
                         <div class="flex">
-                            <div class="tempologo"></div>
-                            <div class="tempologo"></div>
-                            <div class="tempologo"></div>
-                            <div class="tempologo"></div>
+                            <a href="https://www.instagram.com/morrillhallunl/">
+                            <div class="tempologo"><p class="s-textsize xxl-textweight white">I</p></div></a>
+
+                            <a href="https://www.facebook.com/UNSMMorrillHall/">
+                                <div class="tempologo"><p class="s-textsize xxl-textweight white">F</p></div></a>
+
+                            <a href="https://x.com/morrillhallunl">
+                                <div class="tempologo"><p class="s-textsize xxl-textweight white">X</p></div></a>
+
+                            <a href="https://www.youtube.com/@UNLArchie">
+                                <div class="tempologo"><p class="s-textsize xxl-textweight white">Y</p></div>
+                            </a>
                         </div>
                     </div>
                 </div>
-                
             </div>
         </div>
 
